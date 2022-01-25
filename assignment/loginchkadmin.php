@@ -7,10 +7,10 @@ Admin login
 <?php
 $user=$_POST['usrnme'];
 $pass=$_POST['pswrd'];
-$con=mysqli_connect( "localhost", "root", "", "metric" )
+$con=mysqli_connect( "localhost", "root","metric" )
 echo 'connected';
 $sql="select * from admin where username='$user' and password='$pass'";
-$res=mysqli_query($con, $sql);
+$res=mysqli_query($conn, $sql);
 $n=mysqli_num_rows($res);
 if($n)
 {
