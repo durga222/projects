@@ -11,7 +11,7 @@
 
 	    $sql="DELETE from `library` WHERE id ='$id'"; 
     	}
-		if(mysqli_query($con,$sql))
+		if(mysqli_query($conn,$sql))
 		{ 
 			if($type=='review'){
 
@@ -23,8 +23,8 @@
 		} 
 	else
 	{
-		echo "Error:".$sql."<br>".mysqli_error($con);
+		echo "Error:".$sql."<br>".mysqli_error($conn);
 	}
-	mysqli_close($con);
+	mysqli_close($conn);
 
 ?>  
