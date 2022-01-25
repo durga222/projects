@@ -4,7 +4,9 @@
 </title>
 </head>
 <body bgcolor="white">
-<form method="POST" action="loginchkadmin.php">>
+<table border="2" rows="3" cols="2" align="center" cellspacing="3" cellpading="3">
+<form method="POST" action="loginchkadmin.php">
+<a href="adminhome.php">
 <h1><i><center><u>ADMIN LOGIN</u></center></i></h1>
 <table>
 <tr><td>Username</td><td><input type="text" name="usrnme"></td></tr><br>
